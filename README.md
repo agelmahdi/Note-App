@@ -1,6 +1,6 @@
 # Note App
 
-This is a practical project for Senior Android Developers that covers clean Architecture basics using the following: skills: Real-like coding with Kotlin, MVVM Design pattern, Kotlin Coroutines, Room database, Recyclerview , Navigation Controller,Jetpack compose , Use cases, and Dependancy injection using Dagger-Hilt.
+This is a practical project for Professional Android Developers that covers clean Architecture basics using the following: skills: Real-like coding with Kotlin, MVVM Design pattern, Kotlin Coroutines, Room database, Recyclerview , Navigation Controller,Jetpack compose , Use cases, and Dependancy injection using Dagger-Hilt.
 
 # MVVM Design pattern, Kotlin Coroutines, Room database.
 
