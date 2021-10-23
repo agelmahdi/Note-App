@@ -36,5 +36,10 @@ for more information https://github.com/agelmahdi/News-APP
    - Framework: Implements interaction with the Android SDK and provides concrete implementations for the data layer.
 
 
+![image](https://user-images.githubusercontent.com/26491505/138540672-d123dbe6-faf1-4e03-8cfe-8d9e47581219.png)
+
+
+
+
 
 
