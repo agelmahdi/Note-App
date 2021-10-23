@@ -38,6 +38,27 @@ for more information https://github.com/agelmahdi/News-APP
 
 ![image](https://user-images.githubusercontent.com/26491505/138540672-d123dbe6-faf1-4e03-8cfe-8d9e47581219.png)
 
+5. Conclusion
+
+![image](https://user-images.githubusercontent.com/26491505/138559779-49b8c6a2-e1cd-49d7-ab3c-eeaba5ca40ca.png)
+
+    The three most important things to remember are:
+
+   - The communication between layers: Only outer layers can depend on inner layers.
+   - The number of layers is arbitrary: Customize it to your needs.
+   - Things become more abstract in inner circles.
+   
+6. Pros of using Clean Architecture:
+
+   - Code is more decoupled and testable.
+   - You can replace the framework and presentation layers and port your app to a different platform.
+   - It’s easier to maintain the project and add new features.
+   
+7. Cons of using Clean Architecture:
+
+   - You’ll have to write more code, but it pays off.
+   - You have to learn and understand Clean Architecture to work on the project.
+
 
 
 
