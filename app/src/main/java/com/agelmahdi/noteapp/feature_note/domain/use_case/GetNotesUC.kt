@@ -8,7 +8,7 @@ import com.agelmahdi.noteapp.feature_note.domain.util.OrderType
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
-class GetNodesUC(
+class GetNotesUC(
     val noteRepository: NoteRepository
 ) {
     operator fun invoke(

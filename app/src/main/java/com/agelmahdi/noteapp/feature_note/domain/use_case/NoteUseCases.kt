@@ -1,7 +1,8 @@
 package com.agelmahdi.noteapp.feature_note.domain.use_case
 
 data class NoteUseCases(
-    val getNodes: GetNodesUC,
+    val getNotes: GetNotesUC,
     val deleteNote: DeleteNoteUC,
-    val addNote: AddNoteUC
+    val addNote: AddNoteUC,
+    val getNote: GetNoteUC
 )
