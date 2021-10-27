@@ -51,10 +51,10 @@ fun AddEditNoteScreen(
     val scope = rememberCoroutineScope()
 
     // for one time execution
-    LaunchedEffect(key1 = true){
-        viewModel.eventFlow.collectLatest {event ->
-            when(event){
-                is UIEvent.showSnakbar ->{
+    LaunchedEffect(key1 = true) {
+        viewModel.eventFlow.collectLatest { event ->
+            when (event) {
+                is UIEvent.showSnakbar -> {
                     scaffoldState.snackbarHostState.showSnackbar(
                         message = event.message
                     )
@@ -126,8 +126,8 @@ fun AddEditNoteScreen(
                 text = titleState.text,
                 hint = titleState.hint,
                 onValueChange = {
-                               viewModel.onEvent(AddEditNoteEvent.EnteredTitle(it))
-                }, onFocusChange ={
+                    viewModel.onEvent(AddEditNoteEvent.EnteredTitle(it))
+                }, onFocusChange = {
                     viewModel.onEvent(AddEditNoteEvent.ChangeTitleFocus(it))
                 },
 
@@ -142,7 +142,7 @@ fun AddEditNoteScreen(
                 hint = contentState.hint,
                 onValueChange = {
                     viewModel.onEvent(AddEditNoteEvent.EnteredContent(it))
-                }, onFocusChange ={
+                }, onFocusChange = {
                     viewModel.onEvent(AddEditNoteEvent.ChangeContentFocus(it))
                 },
 
