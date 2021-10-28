@@ -274,10 +274,61 @@ for more information https://github.com/agelmahdi/News-APP
 
 6. Refernces:
 
-  - raywenderlich.com shorturl.at/moyLQ
-  - mindorks.com shorturl.at/bfjJ4
+  - raywenderlich.com
+  - mindorks.com
+   
+# Android Testing
+1. why do we testing?
+  - The point of writing automated tests not so much to verify that the code works now, to verify that on an ongoing basis that the code continues to work in the future
+    - Design
+    - Write code
+    - Write Tests
+    - Run the Tests
 
+2. Test runs
+ - Preparation
+ - provide test input
+ - Run the tests
+ - provide expected output
+ - verify result
+ - Do something tto alert developer if test failed
 
+3. Type of tests in android
 
+                           /\ tests that check if many or all
+                          /  \ components of our app work together
+                     10% /    \ well and if the UI looks like
+                        /  UI  \ it should be
+                       /_ _ _ _ \
+                      /          \ Tests how two component
+                 20% /            \ of our app work together
+                    / Integration  \ (e.g. Fragment and ViewModel)
+                   /                \
+                  /_ _ _ _ _ _ _ _ _ \
+                 /                    \   Tests of single units of
+            70% /         Unit         \   our app(e.g. testing
+               /_ _ _ _ _ _ _ _ _ _ _ _ \  the functions of class)
 
+  -> Integration tests test the interaction between different components and instrumented tests test android components on the emulator.
 
+4. Test driven development "TDD":
+    - write the test cases before the implementation of the function (only for unit tests).
+    - we should only have one assertion per test case,
+    - we immediately want to know the cause of a failed test case.
+    - sometimes there is no way around multiple assertions.
+
+   - Write the function signature.
+   - Write the test cases for that function
+   - Write the function logic so the tests pass
+
+5. what makes a good test?
+
+   - Scope: determines how much of our actual code in our function that want to testis covered by our single test case.
+   - Speed: determine how fast our test case runs.
+   - Fidelity: means how close our test case is actually to a real scenario.
+     - we want to prevent so-called flaky test (Sometimes succeeds and sometimes fails).
+     - never make the outcome of a test dependant on the outcome of another test.
+
+6. how many test cases should we cover?
+   - As little test as necessary, but also as many as necessary
+   - Equivalent classes help us to determine the amount of tests a function should have, means one test out of equivalent class.
