@@ -38,6 +38,7 @@ fun AddEditNoteScreen(
 ) {
 
     val titleState = viewModel.noteTitle.value
+
     val contentState = viewModel.noteContent.value
 
     val scaffoldState = rememberScaffoldState()
@@ -98,12 +99,13 @@ fun AddEditNoteScreen(
                             .clip(CircleShape)
                             .background(color = color)
                             .border(
-                                width = 2.dp,
+                                width = 3.dp,
                                 color = if (viewModel.noteColor.value == colorInt) {
                                     Color.Black
                                 } else {
                                     Color.Transparent
-                                }
+                                },
+                                shape = CircleShape
                             )
                             .clickable {
                                 scope.launch {
@@ -130,6 +132,7 @@ fun AddEditNoteScreen(
                 }, onFocusChange = {
                     viewModel.onEvent(AddEditNoteEvent.ChangeTitleFocus(it))
                 },
+                isHintVisible = titleState.isHintVisible,
 
                 singleLine = true,
                 textStyle = MaterialTheme.typography.h5
@@ -145,6 +148,7 @@ fun AddEditNoteScreen(
                 }, onFocusChange = {
                     viewModel.onEvent(AddEditNoteEvent.ChangeContentFocus(it))
                 },
+                isHintVisible = contentState.isHintVisible,
 
                 singleLine = false,
                 textStyle = MaterialTheme.typography.body1,
